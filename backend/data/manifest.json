@@ -1,0 +1,164 @@
+{
+  "dataset_name": "Uploaded SOA workbook bundle",
+  "source_files": [
+    {
+      "file": "48_SOA.xlsx",
+      "rows": 55702,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Inst_Num",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Narration",
+        "pstd_dt",
+        "Crncy",
+        "value_dt",
+        "_file"
+      ]
+    },
+    {
+      "file": "28_SOA.xlsx",
+      "rows": 23892,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Rmks",
+        "Narration",
+        "pstd_dt",
+        "Crncy",
+        "value_dt",
+        "_file"
+      ]
+    },
+    {
+      "file": "26_SOA (1).xlsx",
+      "rows": 56497,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Rmks",
+        "Narration",
+        "pstd_dt",
+        "Crncy",
+        "value_dt",
+        "_file"
+      ]
+    },
+    {
+      "file": "25_SOA.xlsx",
+      "rows": 1172,
+      "columns": [
+        "Init_SOL",
+        "Cust_ID",
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Tran_Type",
+        "Sub_Type",
+        "Inst_Type",
+        "Inst_Num",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Rmks",
+        "Narration",
+        "pstd_dt",
+        "Crncy",
+        "value_dt",
+        "mkr_emp_id",
+        "chk_emp_id",
+        "_file"
+      ]
+    },
+    {
+      "file": "24_SOA.xlsx",
+      "rows": 59894,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Narration",
+        "pstd_dt",
+        "Crncy",
+        "value_dt",
+        "_file"
+      ]
+    },
+    {
+      "file": "23_SOA.xlsx",
+      "rows": 112,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Inst_Type",
+        "Inst_Num",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Narration",
+        "pstd_dt",
+        "_file"
+      ]
+    },
+    {
+      "file": "22_SOA.xlsx",
+      "rows": 4489,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Narration",
+        "pstd_dt",
+        "_file"
+      ]
+    },
+    {
+      "file": "20_SOA.xlsx",
+      "rows": 25,
+      "columns": [
+        "Ac_No",
+        "AC_Name",
+        "Tran_ID",
+        "Tran_Date",
+        "Dr_Amt",
+        "Cr_Amt",
+        "Balance",
+        "Narration",
+        "pstd_dt",
+        "_file"
+      ]
+    }
+  ],
+  "total_rows": 201783,
+  "interpretation": {
+    "statement_owner": "AC_Name is constant within each supplied workbook and is treated as the statement holder label.",
+    "counterparty": "Ac_No is treated as the counterparty account identifier because it varies row-by-row within each workbook.",
+    "direction": "Dr_Amt > 0 means statement holder -> Ac_No; Cr_Amt > 0 means Ac_No -> statement holder.",
+    "limitations": "Source files do not explicitly provide both transfer endpoints or a validated transaction-to-account mapping. Network edges are inferred from the statement layout and must be reviewed before operational use. Currency code values are nonstandard numeric values; dashboard displays INR as a provisional assumption."
+  }
+}
