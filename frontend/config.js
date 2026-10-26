@@ -1,1 +1,1 @@
-window.MULEGUARD_CONFIG = { API_BASE: 'http://127.0.0.1:8000/api' };
+window.MULEGUARD_CONFIG = { API_BASE: 'https://muleguard-ai-0yau.onrender.com/api' };
